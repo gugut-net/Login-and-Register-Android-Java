@@ -137,9 +137,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             ArrayList<String> latitudes = new ArrayList<String>();
             ArrayList<String> longitude = new ArrayList<String>();
 
-            for (LatLng coord : SignIn.locations) {
-                latitudes.add(Double.toString(coord.latitude));
-                longitude.add(Double.toString(coord.longitude));
+            for (LatLng cord : SignIn.locations) {
+                latitudes.add(Double.toString(cord.latitude));
+                longitude.add(Double.toString(cord.longitude));
             }
             sharedPreferences.edit().putString("places", ObjectSerializer.serialize(SignIn.places)).apply();
             sharedPreferences.edit().putString("lats", ObjectSerializer.serialize(latitudes)).apply();

@@ -5,15 +5,16 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/background"
-    tools:context=".MainActivity">
+    tools:context=".SignIn">
 
 
     <TextView
         android:id="@+id/signin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="83dp"
         android:layout_marginEnd="50dp"
         android:gravity="center"
         android:text="Sign in"
@@ -26,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/signin"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="21dp"
         android:layout_marginBottom="10dp"
         android:background="#30ffffff"
         android:drawableLeft="@drawable/ic_baseline_person_24"
@@ -61,7 +62,7 @@
         android:layout_below="@id/password"
         android:layout_alignParentStart="true"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:onClick="clickSignIn"
         android:text="Login"
@@ -74,7 +75,7 @@
         android:layout_below="@+id/password"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="20dp"
         android:onClick="clickRegister"
@@ -88,7 +89,7 @@
         android:layout_below="@+id/loginButton"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:onClick="clickReset"
@@ -102,20 +103,18 @@
         android:layout_below="@id/forgotPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="20dp"
-        android:text="or signin with"
+        android:text="or Sign in with"
         android:textColor="@color/white" />
 
     <LinearLayout
         android:id="@+id/linearlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/other"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="11dp"
-        android:layout_marginBottom="9dp"
+        android:layout_below="@id/other"
+        android:layout_marginTop="5dp"
         android:gravity="center">
 
         <ImageButton
